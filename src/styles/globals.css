@@ -18,6 +18,20 @@
   font-size: 1rem;
 }
 
+.btn-secondary{
+  border-radius: 10px;
+  padding: 17px 30px;
+}
+
+.form-pattern{
+  background-image: url('../../public/images/bg-shorten-desktop.svg');
+  background-color: var(--darkViolet);
+  background-repeat: no-repeat;
+  padding: 40px 20px;
+  background-size: cover;
+  border-radius: 10px;
+}
+
 .align-content-vertically{
   display: flex;
   align-items: center;
@@ -33,4 +47,7 @@
 }
 .gap-spacing{
   gap: 20px;
+}
+.content-center{
+  justify-content: center;
 }

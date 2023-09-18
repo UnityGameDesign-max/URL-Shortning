@@ -12,6 +12,7 @@ export default function Navigation(){
                     width={70}
                     height={20}
                     alt='logo'
+                    layout="responsive"
                     />
                 </Link>
 
