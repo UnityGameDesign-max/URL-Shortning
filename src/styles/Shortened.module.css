@@ -1,0 +1,17 @@
+.shortenedInput{
+    width: 90%;
+    font-size: 1.3rem;
+    padding: 14px 10px;
+    border-radius: 5px;
+    border: 1px solid var(--gray);
+    outline: none;
+}
+
+
+.shortenedInput:focus{
+  border-color: var(--darkViolet); 
+  box-shadow: 0 0 5px var(--veryDarkViolet);
+}
+.shortenedBtn{
+    width: 20%;
+}
