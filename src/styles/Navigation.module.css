@@ -1,0 +1,13 @@
+.nav{
+    justify-content: space-between;
+}
+
+.navLinks{
+    text-decoration: none;
+    color: var(--grayishViolet);
+    font-weight: 400;
+}
+
+.navAuthLink{
+    list-style-type: none;
+}

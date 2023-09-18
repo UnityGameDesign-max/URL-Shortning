@@ -1,0 +1,25 @@
+.hero{
+    padding: 40px 0;
+}
+.heroDetails{
+    width: 45%;
+}
+
+.heroImage{
+    width: 50%;
+}
+
+.heroDetailsTitle{
+    font-size: 4.4rem;
+    font-weight: 600;
+    color: var(--darkViolet);
+    margin-bottom: 4px;
+}
+
+.heroDetailsText{
+    margin-top: 3px;
+    font-size: 1.23rem;
+    font-weight: 500;
+    color: var(--grayishViolet);
+    max-width: 480px;
+}
