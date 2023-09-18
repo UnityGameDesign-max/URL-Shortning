@@ -11,7 +11,6 @@ export default function ShortenedForm(){
                     placeholder="Shorten a link here..."
                 />
                 
-                
                 <button className={`btn-secondary btn ${styles.shortenedBtn}`}>Shortened it!</button>
             </div>
         </>
