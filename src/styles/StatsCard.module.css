@@ -15,7 +15,7 @@
     background-color: var(--white);
     padding: 40px 20px;
     border-radius: 10px;
-    transform: skewX(-10deg);
+    transform: rotate(-5deg);
 }
 
 .statsCardTitle{

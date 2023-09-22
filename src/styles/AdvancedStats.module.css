@@ -15,6 +15,6 @@
 .statsCardContainer{
     display: flex;
     flex-wrap: wrap;
-    transform: skewX(10deg);
+    transform: rotate(5deg); 
     margin: -20px;
 }
