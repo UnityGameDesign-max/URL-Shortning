@@ -1,0 +1,12 @@
+.urlCard{
+    padding: 18px 15px;
+    border-radius: 10px;
+    background-color: var(--white);
+    margin-block: 15px;
+}
+
+.urlCardLink{
+    margin-right: 8px;
+    color: var(--cyan);
+    font-weight: 600;
+}

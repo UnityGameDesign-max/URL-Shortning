@@ -1,0 +1,13 @@
+.advancedStatsTitle{
+    color: var(--darkViolet);
+    font-size: 1.8rem;
+}
+
+.advancedStatsText{
+    color: var(--grayishViolet);
+}
+
+.advancedStatsDetails{
+    max-width: 480px;
+    text-align: center;
+}
