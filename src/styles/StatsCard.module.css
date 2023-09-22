@@ -1,0 +1,28 @@
+.statsCardImage{
+    background-color: var(--darkViolet);
+    border-radius: 50%;
+    text-align: center;
+    height: 60px;
+    width: 60px;
+    margin-top: -65px;
+}
+
+.image{
+    margin-top: 11px;
+}
+
+.statsCard{
+    background-color: var(--white);
+    padding: 40px 20px;
+    border-radius: 10px;
+    transform: skewX(-10deg);
+}
+
+.statsCardTitle{
+    color: var(--darkViolet);
+    
+}
+.statsCardDescription{
+    color: var(--grayishViolet);
+    width: 300px;
+}

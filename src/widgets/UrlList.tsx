@@ -16,7 +16,6 @@ export default function UrlList({ originalLink, shortLink }: UrlListProps) {
     copy(shortLink)
       .then(() => {
         setCopied(true);
-        // setTimeout(() => setCopied(false), 2000);
       })
       .catch((error) => {
         console.error('Error');
@@ -38,7 +37,11 @@ export default function UrlList({ originalLink, shortLink }: UrlListProps) {
         }
       }}
     >
-      <animated.div style={springProps} className={`${styles.urlCard} space-between-items`}>
+      <animated.div 
+       style={springProps} 
+       className={`${styles.urlCard} 
+       space-between-items`}
+      >
         <p>{originalLink}</p>
         <div>
           <a

@@ -5,9 +5,16 @@
 
 .advancedStatsText{
     color: var(--grayishViolet);
+    margin-bottom: 6em;
 }
 
 .advancedStatsDetails{
     max-width: 480px;
     text-align: center;
+}
+.statsCardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    transform: skewX(10deg);
+    margin: -20px;
 }
