@@ -4,12 +4,16 @@ import styles from '@/styles/StatsCard.module.css'
 interface StatsCard{
     cardTitle: string,
     cardDescription: string,
-    icon: string
+    icon: string,
+    isLast?: boolean,
+    isFirst?: boolean
 }
 
-export default function StatsCards({icon, cardTitle, cardDescription}: StatsCard){
+export default function StatsCards({icon, isFirst, isLast, cardTitle, cardDescription}: StatsCard){
+
+    const isShowLine : boolean = !isFirst && !isLast;
     return(
-        <div className={styles.statsCard}>
+        <div className={`${styles.statsCard} ${styles.withLine}`}>
             <div className={styles.statsCardImage}>
                 <Image
                     src={icon}
