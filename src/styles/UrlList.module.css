@@ -15,10 +15,16 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 200px;
+    width: 300px;
 }
 
-@media (max-width:800px ){
+@media (max-width: 868px){
+    .urlOriginalLink{
+        width: 200px;
+    }
+}
+
+@media (max-width:800px){
     .urlCard{
         flex-direction: column;
     }
@@ -27,5 +33,31 @@
         flex-direction: column;
         width: 100%;
     }
+    .urlCardLink{
+        margin-bottom: 15px;
+    }
+    .urlOriginalLink{
+        text-align: left;
+        width: 400px;
+        position: relative;
+    }
+
+    .urlOriginalLink::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        background-color: var(--cyan);
+        height: 2px;
+        top: 0;
+        transform: translateX(-50%);
+    }
+
     
 }
+
+@media (max-width: 550px){
+    .urlOriginalLink{
+        width: 200px;
+    }
+}
+
