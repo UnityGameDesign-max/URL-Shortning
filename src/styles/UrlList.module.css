@@ -34,25 +34,24 @@
         width: 100%;
     }
     .urlCardLink{
-        margin-bottom: 15px;
+        margin-block: 15px;
     }
     .urlOriginalLink{
         text-align: left;
         width: 400px;
+    }
+    .urlCard{
         position: relative;
     }
-
-    .urlOriginalLink::after{
+    .urlCard::after{
         content: '';
         position: absolute;
         width: 100%;
-        background-color: var(--cyan);
+        background-color: var(--lightGray);
         height: 2px;
-        top: 0;
-        transform: translateX(-50%);
+        bottom: 60%;
+        left: 0%;
     }
-
-    
 }
 
 @media (max-width: 550px){
