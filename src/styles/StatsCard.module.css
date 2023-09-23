@@ -16,11 +16,12 @@
     padding: 40px 20px;
     border-radius: 10px;
     transform: rotate(-5deg);
+    margin-bottom: 90px;
+    margin-top: 40px;
 }
 
 .statsCardTitle{
     color: var(--darkViolet);
-    
 }
 .statsCardDescription{
     color: var(--grayishViolet);

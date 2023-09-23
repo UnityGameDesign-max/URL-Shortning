@@ -31,12 +31,6 @@ export default function Navigation(){
             </div>
             
             <ul className='align-content-vertically gap-spacing'>
-                {/* <Image 
-                 src={'/images/'}
-                 width={30}
-                 height={30}
-                 alt='hamMenu'
-                /> */}
                 <li className={styles.navAuthLink}>
                     <Link className={styles.navLinks} href='/'>Login</Link>
                 </li>
