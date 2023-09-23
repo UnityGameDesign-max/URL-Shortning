@@ -1,0 +1,10 @@
+@media (max-width: 565px){
+    .boostTitle{
+        font-size: 1.6rem;
+    }
+}
+@media (max-width: 382px){
+    .boostTitle{
+        font-size: 1.1rem;
+    }
+}
