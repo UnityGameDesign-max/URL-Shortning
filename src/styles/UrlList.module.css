@@ -10,3 +10,22 @@
     color: var(--cyan);
     font-weight: 600;
 }
+
+.urlOriginalLink{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 200px;
+}
+
+@media (max-width:800px ){
+    .urlCard{
+        flex-direction: column;
+    }
+    .urlItemRight{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+}

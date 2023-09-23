@@ -33,7 +33,7 @@ export interface URLShortened {
     }
 }
 
-export default function ShortenedForm({ urlList, sendDataToParent }: ChildUrlProp){
+export default function ShortenedForm({ sendDataToParent }: ChildUrlProp){
     
     const [shortenedLink, setShortenedLink] = useState<string>('');
     const [url, setUrl] = useState<URLShortened[]>([]);
@@ -49,8 +49,7 @@ export default function ShortenedForm({ urlList, sendDataToParent }: ChildUrlPro
             })
             const responseData : URLShortened = await response.json();
             setUrl([...url, responseData]);
-            sendDataToParent(url);
-            console.log(url)
+            sendDataToParent([...url, responseData]);
         }catch(err){
             console.error(err);
         }
@@ -62,7 +61,7 @@ export default function ShortenedForm({ urlList, sendDataToParent }: ChildUrlPro
             className="form-pattern"
             onSubmit={handleSubmit(onSubmit)}
         >
-            <div className='content-vertically gap-spacing'>
+            <div className={`${styles.formUrl} content-vertically gap-spacing`}>
                 <input
                     type="text"
                     className={

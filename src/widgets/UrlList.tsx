@@ -18,7 +18,7 @@ export default function UrlList({ originalLink, shortLink }: UrlListProps) {
         setCopied(true);
       })
       .catch((error) => {
-        console.error('Error');
+        console.error('Error'+ error);
       });
   }
 
@@ -42,8 +42,9 @@ export default function UrlList({ originalLink, shortLink }: UrlListProps) {
        className={`${styles.urlCard} 
        space-between-items`}
       >
-        <p>{originalLink}</p>
-        <div>
+        <p className={styles.urlOriginalLink}>{originalLink}</p>
+
+        <div className={styles.urlItemRight}>
           <a
             target="_blank"
             rel="noopener noreferrer"
@@ -52,6 +53,7 @@ export default function UrlList({ originalLink, shortLink }: UrlListProps) {
           >
             {shortLink}
           </a>
+
           <button
             onClick={copyToClipboard}
             className={copied ? 'btn-tertiary' :'btn btn-secondary'}

@@ -11,3 +11,24 @@
 .navAuthLink{
     list-style-type: none;
 }
+.navLeft a:not(:first-child){
+    margin-top: 5px;
+}
+
+
+.hamMenu{
+    display: none;
+}
+
+
+@media (max-width: 890px){
+    .navLeft a:not(:first-child){
+        display: none;
+    }
+    .navRight li{
+        display: none;
+    }
+    .hamMenu{
+        display: flex;
+    }
+}

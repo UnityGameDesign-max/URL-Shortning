@@ -5,7 +5,7 @@ import styles from '@/styles/Navigation.module.css';
 export default function Navigation(){
     return(
         <nav className={`${styles.nav} gap-spacing align-content-vertically`}>
-            <div className={'content-vertically gap-spacing'}>
+            <div className={`${styles.navLeft} content-vertically gap-spacing`}>
                 <Link className={styles.navLinks} href={'/'}>
                     <Image
                     src='/images/logo.svg'
@@ -30,7 +30,7 @@ export default function Navigation(){
 
             </div>
             
-            <ul className='align-content-vertically gap-spacing'>
+            <ul className={`${styles.navRight} align-content-vertically gap-spacing`}>
                 <li className={styles.navAuthLink}>
                     <Link className={styles.navLinks} href='/'>Login</Link>
                 </li>
@@ -38,6 +38,15 @@ export default function Navigation(){
                     <button className="btn">Sign Up</button>
                 </li>
             </ul>
+            <Link className={styles.hamMenu} href='#'>
+                <Image
+                    src={'/images/ham-menu-mobile.svg'}
+                    alt="ham-menu"
+                    width={30}
+                    height={30}
+                />
+            </Link>
+           
         </nav>
     )
 }

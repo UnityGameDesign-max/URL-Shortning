@@ -1,10 +1,11 @@
 import Image from "next/image";
-import Link from "next/link";
 import styles from '@/styles/Footer.module.css';
 export default function Footer(){
     return(
         <div className='footer'>
-            <div className='container space-between-items'>
+            <div className={`${styles.footerContent} 
+             container space-between-items`}
+            >
                 <Image
                     className={styles.footerImage}
                     src={'/images/logo-footer.svg'}

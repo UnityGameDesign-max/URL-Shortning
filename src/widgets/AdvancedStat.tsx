@@ -45,7 +45,6 @@ export default function AdvancedStats(){
                         <StatsCards
                             icon={'/images/icon-brand-recognition.svg'}
                             cardTitle='Brand Recognition'
-                            isFirst={true}
                             cardDescription="Boost your brand recognition with each click. 
                             Generic links don't mean a thing. Branded links helps instil confidence in your content."
                         />
@@ -60,11 +59,10 @@ export default function AdvancedStats(){
                         <StatsCards 
                             icon={'/images/icon-fully-customizable.svg'}
                             cardTitle='Fully Customizable'
-                            isLast={true}
                             cardDescription="Improve brand awareness and content discoverability through 
                             customizable links, supercharging audience engagement."
                         />
-                </div>
+                    </div>
                 </div>
             </section>
         </div>

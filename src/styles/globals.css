@@ -49,6 +49,12 @@ body{
   margin-top: -80px;
 }
 
+@media (max-width: 800px){
+  .form-pattern{
+    padding-inline: 30px;
+  }
+}
+
 .boost-pattern{
   background-image: url('../../public/images/bg-boost-desktop.svg');
   background-color: var(--darkViolet);

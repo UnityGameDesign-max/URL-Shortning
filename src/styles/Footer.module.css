@@ -3,17 +3,29 @@
 }
 .footerLink{
     color: var(--white);
-    
 }
-
-.company{
-    
-}
-
 .link{
     color: var(--white);
     text-decoration: none;
     font-size: 0.8rem;
     font-weight: 400;
     margin-bottom: 16px;
+}
+@media (max-width: 790px){
+    .footerContent{
+        display: grid;
+    }
+}
+
+@media (max-width: 430px){
+    .footerContent{
+        grid-template-columns: repeat(1, 1fr);
+        place-items: center;
+        text-align: center;
+    }
+    .footerLink{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
